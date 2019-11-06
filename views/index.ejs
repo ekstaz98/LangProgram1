@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>file manager</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style type="text/css">.delfield{margin-left: 15px;}</style>
+  </head>
+  <body>
+  <div>
+  	<form action="/" method="post">
+  		<input type="text" name="namefield" placeholder="Имя папки">
+  		<input type="submit" name="create" value=" Создать папку ">
+  	</form>
+  	 <ul>
+      <li><a href="/">root</a> </li>
+      <li><a href="/back">..</a> </li>
+  	 	<% spisok.forEach(function(item){%> 
+        <li><a href="/id?name=<%= item.name %>&type=<%= item.type %>"><%= item.name %></a><a href="/delete?name=<%= item.name %>&type=<%= item.type %>"><input class="delfield" type="submit" name="<%= item.name %>" value=" x "></a></li>                
+             <%}); %>
+  	 </ul>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #333;
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+}
+li{
+	font-size: 20px;
+	list-style-type: none; /* Убираем маркеры */
+}
+.delfield{
+	margin-right: : 10%;
+}
